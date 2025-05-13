@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [name, setName] = useState("")
+
 
   return (
     <>
@@ -28,6 +30,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+    <h1>{name}</h1>
+    <input type="text" placeholder="Enter your Name" onChange={(e)=>{setName(e.target.value)}}/>
     </>
   )
 }
