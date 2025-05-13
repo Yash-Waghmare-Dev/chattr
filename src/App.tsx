@@ -32,7 +32,7 @@ function App() {
       </p>
 
     <h1>{name}</h1>
-    <input type="text" placeholder="Enter your Name" onChange={(e)=>{setName(e.target.value)}}/>
+    <input type="text" className='input-value' placeholder="Enter your Name" onChange={(e)=>{setName(e.target.value)}}/>
     </>
   )
 }
